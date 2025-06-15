@@ -1,0 +1,24 @@
+{
+  "name": "dnsrator-firefox",
+  "version": "1.1.0",
+  "description": "DNSRator - Cross-browser DNS Checker Extension (Firefox/Chrome, TypeScript, Webpack)",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "run:firefox": "web-ext run -s dist/ --start-url about:blank"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^120.0.4",
+    "copy-webpack-plugin": "^12.0.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.4.0",
+    "web-ext": "^8.7.1",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
+}
